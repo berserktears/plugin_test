@@ -4,8 +4,10 @@
 ## Short-cut
 shift + command + K
 
+<!-- Plugin description -->
 ## Description
 Plugin for IntelliJ IDEA that allows you to search selected text in google, bing or stackoverflow
+<!-- Plugin description end -->
 
 ## Commits History
 commit f3d6d58b20ef444878cb97b48a0042038fb43ec0 (HEAD -> main, origin/main, origin/HEAD)

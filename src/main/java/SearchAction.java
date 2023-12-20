@@ -35,12 +35,21 @@ public class SearchAction extends AnAction {
                 "Google",
                 null);
 
-        String url = switch (chosenEngine) {
-            case 0 -> Google_URL + encodedText;
-            case 1 -> Bing_URL + encodedText;
-            case 2 -> StackOverflow_URL + encodedText;
-            default -> Google_URL + encodedText;
-        };
+        String url;
+        switch (chosenEngine) {
+            case 0:
+                url = Google_URL + encodedText;
+                break;
+            case 1:
+                url = Bing_URL + encodedText;
+                break;
+            case 2:
+                url = StackOverflow_URL + encodedText;
+                break;
+            default:
+                return;
+        }
+
         BrowserUtil.browse(url);
     }
 }

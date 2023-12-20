@@ -15,4 +15,9 @@
     <applicationListeners>
         <listener class="com.github.berserktears.plugintest.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
+    <actions>
+        <action id="SearchAction" class="SearchAction" text="SearchAction" description="SearchAction">
+            <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl K"/>
+        </action>
+    </actions>
 </idea-plugin>

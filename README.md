@@ -1,44 +1,83 @@
 # plugin_test
+# Куницын Кирилл М3216
 
-![Build](https://github.com/berserktears/plugin_test/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
+## Short-cut
+shift + command + K
 
-## Template ToDo list
-- [x] Create a new [IntelliJ Platform Plugin Template][template] project.
-- [ ] Get familiar with the [template documentation][template].
-- [ ] Adjust the [pluginGroup](./gradle.properties), [plugin ID](./src/main/resources/META-INF/plugin.xml) and [sources package](./src/main/kotlin).
-- [ ] Adjust the plugin description in `README` (see [Tips][docs:plugin-description])
-- [ ] Review the [Legal Agreements](https://plugins.jetbrains.com/docs/marketplace/legal-agreements.html?from=IJPluginTemplate).
-- [ ] [Publish a plugin manually](https://plugins.jetbrains.com/docs/intellij/publishing-plugin.html?from=IJPluginTemplate) for the first time.
-- [ ] Set the `PLUGIN_ID` in the above README badges.
-- [ ] Set the [Plugin Signing](https://plugins.jetbrains.com/docs/intellij/plugin-signing.html?from=IJPluginTemplate) related [secrets](https://github.com/JetBrains/intellij-platform-plugin-template#environment-variables).
-- [ ] Set the [Deployment Token](https://plugins.jetbrains.com/docs/marketplace/plugin-upload.html?from=IJPluginTemplate).
-- [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
+## Description
+Plugin for IntelliJ IDEA that allows you to search selected text in google, bing or stackoverflow
 
-<!-- Plugin description -->
-This Fancy IntelliJ Platform Plugin is going to be your implementation of the brilliant ideas that you have.
+## Commits History
+commit f3d6d58b20ef444878cb97b48a0042038fb43ec0 (HEAD -> main, origin/main, origin/HEAD)
+Author: BerserkTears <kirill.kunitsyn@gmail.com>
+Date:   Thu Dec 21 01:25:49 2023 +0300
 
-This specific section is a source for the [plugin.xml](/src/main/resources/META-INF/plugin.xml) file which will be extracted by the [Gradle](/build.gradle.kts) during the build process.
+    refactor: delete unused code
 
-To keep everything working, do not remove `<!-- ... -->` sections. 
-<!-- Plugin description end -->
+commit ba596c5068eb89c47117de9f520ee4865b280e2f
+Author: BerserkTears <kirill.kunitsyn@gmail.com>
+Date:   Thu Dec 21 01:25:32 2023 +0300
 
-## Installation
+    fix: fix cancel button
 
-- Using the IDE built-in plugin system:
-  
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "plugin_test"</kbd> >
-  <kbd>Install</kbd>
-  
-- Manually:
+commit 79e887dcd2528237dbcba5b65d0a64730a9dd64d
+Author: BerserkTears <kirill.kunitsyn@gmail.com>
+Date:   Thu Dec 21 01:16:02 2023 +0300
 
-  Download the [latest release](https://github.com/berserktears/plugin_test/releases/latest) and install it manually using
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
+    feat: add search plugin
+
+commit 8348afe84de4412478c6529791cbf3c002dcc8fa (origin/dependabot/github_actions/actions/upload-artifact-4)
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Wed Dec 20 21:30:48 2023 +0000
+
+    Bump actions/upload-artifact from 3 to 4
+    
+    Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 3 to 4.
+    - [Release notes](https://github.com/actions/upload-artifact/releases)
+    - [Commits](https://github.com/actions/upload-artifact/compare/v3...v4)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: actions/upload-artifact
+      dependency-type: direct:production
+      update-type: version-update:semver-major
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+commit bca9ba58f296bd77a9687ed0f1386ffeb55ae3ab (origin/dependabot/github_actions/JetBrains/qodana-action-2023.3.0)
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Wed Dec 20 21:30:45 2023 +0000
+
+    Bump JetBrains/qodana-action from 2023.2.8 to 2023.3.0
+    
+    Bumps [JetBrains/qodana-action](https://github.com/jetbrains/qodana-action) from 2023.2.8 to 2023.3.0.
+    - [Release notes](https://github.com/jetbrains/qodana-action/releases)
+    - [Commits](https://github.com/jetbrains/qodana-action/compare/v2023.2.8...v2023.3.0)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: JetBrains/qodana-action
+      dependency-type: direct:production
+      update-type: version-update:semver-minor
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+commit 31c62dd8d5bbab83c6dfe98d153ec1fcde3ad634
+Author: GitHub Action <action@github.com>
+Date:   Wed Dec 20 21:30:26 2023 +0000
+
+    Template cleanup
+
+commit ca6aa76b61794753be0bfc16cd96a30b92543ab9
+Author: berserktears <80447364+berserktears@users.noreply.github.com>
+Date:   Thu Dec 21 00:30:11 2023 +0300
+
+    Initial commit
 
 
 ---
 Plugin based on the [IntelliJ Platform Plugin Template][template].
 
 [template]: https://github.com/JetBrains/intellij-platform-plugin-template
-[docs:plugin-description]: https://plugins.jetbrains.com/docs/intellij/plugin-user-experience.html#plugin-description-and-presentation
